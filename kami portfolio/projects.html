@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Kamikun Johnson</title>
+  <meta name="description" content="Case studies by Kamikun Johnson — MashaPay ($307K blockchain platform), Real Estate Tokenization Audit, Excelerate PM Programs, and more." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">KJ<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Let's Talk</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-menu-close" id="mobileClose">✕</span>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="ph-label reveal">Case Studies</div>
+      <h1 class="ph-title reveal">Projects That<br /><span>Delivered Results</span></h1>
+      <p class="ph-sub reveal">Four detailed case studies showing how I move from complex problems to shipped solutions — across blockchain, fintech, EdTech, and social impact.</p>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDY 1 — MASHAPAY
+       ═══════════════════════════════════════════ -->
+  <section class="case-study" id="mashapay">
+    <div class="container">
+      <div class="cs-header reveal">
+        <div class="cs-number">01</div>
+        <div class="cs-meta">
+          <div class="cs-tags">
+            <span class="tag">Fintech</span>
+            <span class="tag cyan">GCC Market</span>
+            <span class="tag gold">$250K–$307K</span>
+          </div>
+          <h2 class="cs-title">MashaPay — Multi-Chain Crypto Payment Platform</h2>
+          <div class="cs-roles">
+            <span class="role-chip">Founder & Project Manager</span>
+            <span class="role-chip">Kammy Agency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-grid">
+        <div class="cs-main">
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">The Problem</div>
+            <p>A well-funded GCC startup needed a payment platform that let users pay merchants in crypto while merchants received fiat — instantly, across seven blockchains, with full compliance. The technical complexity was enormous, and the client needed a clear, phased plan to secure investor confidence.</p>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">What I Did</div>
+            <p>I developed a comprehensive milestone-based proposal valued at $250K–$307K. I mapped the full system architecture — integrating Fireblocks for custody, Binance Convert API for liquidity, and a double-entry ledger system ensuring auditability across seven chains. I then broke the project into 6 clear milestones with deliverables, timelines, and resource plans, and presented directly to founders.</p>
+          </div>
+
+          <!-- SYSTEM ARCHITECTURE DIAGRAM -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">System Architecture</div>
+            <div class="arch-diagram">
+              <div class="arch-layer layer-client">
+                <div class="arch-layer-label">Client Layer</div>
+                <div class="arch-boxes">
+                  <div class="arch-box">Mobile App</div>
+                  <div class="arch-box">Admin Dashboard</div>
+                </div>
+              </div>
+              <div class="arch-arrow-down">↓</div>
+              <div class="arch-layer layer-gateway">
+                <div class="arch-layer-label">API Gateway</div>
+                <div class="arch-boxes">
+                  <div class="arch-box wide">Security · Validation · Routing</div>
+                </div>
+              </div>
+              <div class="arch-arrow-down">↓</div>
+              <div class="arch-layer layer-backend">
+                <div class="arch-layer-label">Backend Services</div>
+                <div class="arch-boxes">
+                  <div class="arch-box">Auth Service</div>
+                  <div class="arch-box">Wallet Service</div>
+                  <div class="arch-box">Ledger Service</div>
+                  <div class="arch-box">Payment Orchestrator</div>
+                </div>
+              </div>
+              <div class="arch-row-split">
+                <div class="arch-split-left">
+                  <div class="arch-arrow-down">↓</div>
+                  <div class="arch-layer layer-data">
+                    <div class="arch-layer-label">Data Layer</div>
+                    <div class="arch-boxes">
+                      <div class="arch-box">PostgreSQL</div>
+                      <div class="arch-box">Redis</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arch-split-right">
+                  <div class="arch-arrow-down">↓</div>
+                  <div class="arch-layer layer-external">
+                    <div class="arch-layer-label">External Services</div>
+                    <div class="arch-boxes">
+                      <div class="arch-box ext">Fireblocks</div>
+                      <div class="arch-box ext">Binance</div>
+                      <div class="arch-box ext">Checkout.com</div>
+                      <div class="arch-box ext">KYC / AML</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEDGER DESIGN -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Double-Entry Ledger Flow</div>
+            <div class="ledger-flow">
+              <div class="lf-step">
+                <div class="lf-box user">User Action<br/><small>(Deposit / Payment / Transfer)</small></div>
+              </div>
+              <div class="lf-arrow">↓</div>
+              <div class="lf-step">
+                <div class="lf-box service">Transaction Service</div>
+              </div>
+              <div class="lf-arrow">↓</div>
+              <div class="lf-step">
+                <div class="lf-box service">Ledger Service</div>
+              </div>
+              <div class="lf-split">
+                <div class="lf-branch">
+                  <div class="lf-arrow">↓</div>
+                  <div class="lf-box data">Transactions Table</div>
+                </div>
+                <div class="lf-branch">
+                  <div class="lf-arrow">↓</div>
+                  <div class="lf-box data">Ledger Entries Table</div>
+                </div>
+              </div>
+              <div class="lf-accounts">
+                <div class="lf-box acc">User Wallet<br/><small>-$100</small></div>
+                <div class="lf-box acc">Settlement Account<br/><small>+$100</small></div>
+                <div class="lf-box acc">External Provider<br/><small>Record</small></div>
+              </div>
+              <div class="lf-principle">
+                <span class="tag">Debits = Credits · Always Balanced · Full Audit Trail</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MILESTONE TIMELINE -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Project Milestones (Option 1 — $250K)</div>
+            <div class="milestone-timeline">
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 1</span>
+                    <span class="ms-price">$60,000</span>
+                    <span class="ms-weeks">Weeks 1–3</span>
+                  </div>
+                  <div class="ms-desc">System planning, architecture design, UI/UX, database schema, API specifications</div>
+                </div>
+              </div>
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 2</span>
+                    <span class="ms-price">$45,000</span>
+                    <span class="ms-weeks">Weeks 4–7</span>
+                  </div>
+                  <div class="ms-desc">Wallet system + blockchain integration layer (multi-chain support)</div>
+                </div>
+              </div>
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 3</span>
+                    <span class="ms-price">$45,000</span>
+                    <span class="ms-weeks">Weeks 8–11</span>
+                  </div>
+                  <div class="ms-desc">Mobile application development + authentication + KYC integration</div>
+                </div>
+              </div>
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 4</span>
+                    <span class="ms-price">$45,000</span>
+                    <span class="ms-weeks">Weeks 12–15</span>
+                  </div>
+                  <div class="ms-desc">Card issuance integration + crypto-to-fiat conversion engine</div>
+                </div>
+              </div>
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 5</span>
+                    <span class="ms-price">$30,000</span>
+                    <span class="ms-weeks">Weeks 16–19</span>
+                  </div>
+                  <div class="ms-desc">System testing, performance optimization, security audit</div>
+                </div>
+              </div>
+              <div class="ms-item">
+                <div class="ms-dot"></div>
+                <div class="ms-content">
+                  <div class="ms-header">
+                    <span class="ms-label">Milestone 6</span>
+                    <span class="ms-price">$25,000</span>
+                    <span class="ms-weeks">Weeks 20–24</span>
+                  </div>
+                  <div class="ms-desc">Production deployment, stabilization, warranty support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">Results</div>
+            <p>The proposal was approved and the architecture became the project's blueprint. The client moved forward with funding, and the project is now in active development with a team I helped assemble. The phased plan reduced stakeholder anxiety and gave the engineering team a precise roadmap.</p>
+          </div>
+
+        </div>
+
+        <div class="cs-sidebar">
+          <div class="cs-detail-card card reveal">
+            <h4 class="cdc-title">Project Details</h4>
+            <div class="cdc-row"><span>Client</span><span>GCC-based Fintech</span></div>
+            <div class="cdc-row"><span>Role</span><span>Founder & PM</span></div>
+            <div class="cdc-row"><span>Value</span><span class="green">$250K–$307K</span></div>
+            <div class="cdc-row"><span>Timeline</span><span>24 Weeks</span></div>
+            <div class="cdc-row"><span>Market</span><span>Saudi Arabia · UAE</span></div>
+          </div>
+          <div class="cs-tech-card card reveal">
+            <h4 class="cdc-title">Tech Stack</h4>
+            <div class="tech-list">
+              <span class="tag cyan">Node.js / NestJS</span>
+              <span class="tag cyan">React Native</span>
+              <span class="tag cyan">Next.js</span>
+              <span class="tag cyan">PostgreSQL</span>
+              <span class="tag cyan">Redis</span>
+              <span class="tag cyan">Fireblocks</span>
+              <span class="tag cyan">Binance Convert</span>
+              <span class="tag cyan">AWS / Docker</span>
+              <span class="tag cyan">Kubernetes</span>
+              <span class="tag">Ethereum</span>
+              <span class="tag">BNB Chain</span>
+              <span class="tag">Polygon</span>
+              <span class="tag">Solana</span>
+              <span class="tag">TRON</span>
+              <span class="tag">Arbitrum</span>
+              <span class="tag">⚡ Lightning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-divider"><div class="container"><div class="divider"></div></div></div>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDY 2 — REAL ESTATE TOKENIZATION
+       ═══════════════════════════════════════════ -->
+  <section class="case-study" id="realestate">
+    <div class="container">
+      <div class="cs-header reveal">
+        <div class="cs-number">02</div>
+        <div class="cs-meta">
+          <div class="cs-tags">
+            <span class="tag">Real Estate</span>
+            <span class="tag cyan">Blockchain Audit</span>
+            <span class="tag gold">6 Months Saved</span>
+          </div>
+          <h2 class="cs-title">Real Estate Tokenization MVP Audit & Rescue</h2>
+          <div class="cs-roles">
+            <span class="role-chip">Technical Auditor</span>
+            <span class="role-chip">Project Strategy Lead</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-grid">
+        <div class="cs-main">
+          <div class="cs-block reveal">
+            <div class="cs-block-label">The Problem</div>
+            <p>The client had invested in an MVP built on Laravel and MySQL to tokenize property assets. It was rigid, couldn't scale to handle complex smart contract interactions, and was architecturally misaligned with their growth plans. They needed an honest, actionable technical review before going further.</p>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">What I Did</div>
+            <p>I conducted a full system audit: reviewing code structure, database design, and smart contract integration points. I wrote a detailed report highlighting where the existing stack would fail under real load, and then proposed a complete rebuild strategy using Node.js and MongoDB — far better suited for high-frequency blockchain transactions.</p>
+          </div>
+
+          <!-- BEFORE / AFTER COMPARISON -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Before vs After — Tech Stack</div>
+            <div class="stack-compare">
+              <div class="sc-col sc-before">
+                <div class="sc-header">
+                  <span class="sc-icon">⚠️</span>
+                  <span class="sc-label">Before (Existing)</span>
+                </div>
+                <div class="sc-items">
+                  <div class="sc-item bad">Laravel (PHP Backend)</div>
+                  <div class="sc-item bad">MySQL (Relational DB)</div>
+                  <div class="sc-item bad">No Web3 integration</div>
+                  <div class="sc-item bad">Early MVP — unstable auth</div>
+                  <div class="sc-item bad">Admin panel non-functional</div>
+                  <div class="sc-item bad">Blockchain layer: absent</div>
+                </div>
+                <div class="sc-verdict bad-verdict">❌ Dead-end architecture</div>
+              </div>
+              <div class="sc-arrow">→</div>
+              <div class="sc-col sc-after">
+                <div class="sc-header">
+                  <span class="sc-icon">✅</span>
+                  <span class="sc-label">After (Recommended)</span>
+                </div>
+                <div class="sc-items">
+                  <div class="sc-item good">Node.js / Express (JS)</div>
+                  <div class="sc-item good">MongoDB (Flexible DB)</div>
+                  <div class="sc-item good">Ethers.js integration</div>
+                  <div class="sc-item good">Solidity smart contracts</div>
+                  <div class="sc-item good">React / Next.js frontend</div>
+                  <div class="sc-item good">On-chain property ownership</div>
+                </div>
+                <div class="sc-verdict good-verdict">✅ Scalable Web3 architecture</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AUDIT FINDINGS -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Blockchain Integration Points Identified</div>
+            <div class="audit-points">
+              <div class="ap-item">
+                <div class="ap-num">01</div>
+                <div class="ap-content">
+                  <div class="ap-title">Property Details Page</div>
+                  <p class="ap-desc">Register property ownership on-chain, transfer ownership between users, display transaction records or explorer links.</p>
+                </div>
+              </div>
+              <div class="ap-item">
+                <div class="ap-num">02</div>
+                <div class="ap-content">
+                  <div class="ap-title">User Dashboard (My Properties)</div>
+                  <p class="ap-desc">Show on-chain vs off-chain ownership status, track full ownership history and transaction records.</p>
+                </div>
+              </div>
+              <div class="ap-item">
+                <div class="ap-num">03</div>
+                <div class="ap-content">
+                  <div class="ap-title">Admin Panel</div>
+                  <p class="ap-desc">Review listings before on-chain registration, maintain blockchain activity records. (Panel non-functional at time of audit.)</p>
+                </div>
+              </div>
+              <div class="ap-item">
+                <div class="ap-num">04</div>
+                <div class="ap-content">
+                  <div class="ap-title">Profile / Settings Page</div>
+                  <p class="ap-desc">Connect MetaMask wallet, link wallet address to user account for seamless Web3 interactions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">Results</div>
+            <p>The founders adopted the rebuild plan. They avoided what would have been a costly, dead-end development path, and the new architecture is currently being implemented. My audit saved them an estimated six months of wasted effort and significant capital in rework costs.</p>
+          </div>
+        </div>
+
+        <div class="cs-sidebar">
+          <div class="cs-detail-card card reveal">
+            <h4 class="cdc-title">Project Details</h4>
+            <div class="cdc-row"><span>Client</span><span>Real Estate Startup</span></div>
+            <div class="cdc-row"><span>Role</span><span>Technical Auditor</span></div>
+            <div class="cdc-row"><span>Saved</span><span class="green">~6 Months</span></div>
+            <div class="cdc-row"><span>Date</span><span>April 2026</span></div>
+          </div>
+          <div class="cs-impact-card card reveal">
+            <h4 class="cdc-title">Key Impact</h4>
+            <div class="impact-items">
+              <div class="impact-item">
+                <div class="ii-icon">🔍</div>
+                <div class="ii-text">Found critical stack mismatch before wasted investment</div>
+              </div>
+              <div class="impact-item">
+                <div class="ii-icon">🗺️</div>
+                <div class="ii-text">Delivered clear rebuild roadmap with phased migration</div>
+              </div>
+              <div class="impact-item">
+                <div class="ii-icon">💰</div>
+                <div class="ii-text">Prevented months of rework and capital loss</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-divider"><div class="container"><div class="divider"></div></div></div>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDY 3 — EXCELERATE
+       ═══════════════════════════════════════════ -->
+  <section class="case-study" id="excelerate">
+    <div class="container">
+      <div class="cs-header reveal">
+        <div class="cs-number">03</div>
+        <div class="cs-meta">
+          <div class="cs-tags">
+            <span class="tag">EdTech</span>
+            <span class="tag cyan">Program Design</span>
+            <span class="tag gold">Official Template</span>
+          </div>
+          <h2 class="cs-title">Excelerate PM Internship Program Design</h2>
+          <div class="cs-roles">
+            <span class="role-chip">Project Lead</span>
+            <span class="role-chip">PM Intern · Dubai | USA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-grid">
+        <div class="cs-main">
+          <div class="cs-block reveal">
+            <div class="cs-block-label">The Problem</div>
+            <p>Excelerate needed two structured, hands-on internship programs that would actually simulate real-world project management — not just theory. They lacked a repeatable template that interns and mentors could follow across cohorts. Programs had to be self-contained, deliverable-driven, and runnable within 4 weeks.</p>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">What I Did</div>
+            <p>I led the end-to-end design of both programs from scratch — writing Team and Project Charters, structuring two distinct 4-week internship briefs with weekly deliverables, setting up Trello boards to mirror real Agile/Kanban workflows, and applying Scrum principles where each week was a sprint and each deliverable a working increment.</p>
+          </div>
+
+          <!-- TRELLO BOARDS SHOWCASE -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Trello Board Setup — Program 1: Community Recycling Campaign</div>
+            <div class="trello-board">
+              <div class="trello-col">
+                <div class="trello-col-header week1">WEEK 1 — RESEARCH, SCOPING & CONSTRAINT IDENTIFICATION</div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag doc">Documentation</span><p>Understand Nonprofit Goals</p></div>
+                <div class="trello-card"><span class="tc-tag research">Research Intern</span><p>Research Community Recycling Initiatives</p></div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag planning">Planning</span><p>Identify Project Constraints</p></div>
+              </div>
+              <div class="trello-col">
+                <div class="trello-col-header week2">WEEK 2 — SCHEDULING & RESOURCE PLANNING</div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag planning">Planning</span><p>Build the Campaign Schedule</p></div>
+                <div class="trello-card"><span class="tc-tag volunteer">Volunteer Coord.</span><p>Resource Allocation (Volunteer Assignments)</p></div>
+                <div class="trello-card"><span class="tc-tag comms">Comms Intern</span><p>Draft Communication Plan</p></div>
+              </div>
+              <div class="trello-col">
+                <div class="trello-col-header week3">WEEK 3 — EXECUTION SIMULATION & MONITORING</div>
+                <div class="trello-card"><span class="tc-tag volunteer">Volunteer Coord.</span><p>Track Volunteer Activity Progress</p></div>
+                <div class="trello-card"><span class="tc-tag comms">Comms Intern</span><p>Send Weekly Update Email</p></div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag risk">Risk Mgmt</span><p>Manage Project Issues</p></div>
+              </div>
+              <div class="trello-col">
+                <div class="trello-col-header week4">WEEK 4 — EVALUATION, REPORTING & FINAL PRESENTATION</div>
+                <div class="trello-card"><span class="tc-tag research">Research Intern</span><p>Analyze Simulated Impact Data</p></div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag planning">Planning</span><p>Conduct Project Retrospective</p></div>
+                <div class="trello-card"><span class="tc-tag pm">PM Intern</span><span class="tc-tag doc">Documentation</span><p>Final Documentation & Closure</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SPRINT STRUCTURE -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">4-Week Sprint Structure — Both Programs</div>
+            <div class="sprint-grid">
+              <div class="sprint-item">
+                <div class="sprint-week">Week 1</div>
+                <div class="sprint-title">Setup & Analysis</div>
+                <div class="sprint-deliverable">Project Charter · Stakeholder Map · Constraints Log</div>
+              </div>
+              <div class="sprint-arrow">→</div>
+              <div class="sprint-item">
+                <div class="sprint-week">Week 2</div>
+                <div class="sprint-title">Planning & Alignment</div>
+                <div class="sprint-deliverable">Sprint Plan · Resource Allocation · Communication Plan</div>
+              </div>
+              <div class="sprint-arrow">→</div>
+              <div class="sprint-item">
+                <div class="sprint-week">Week 3</div>
+                <div class="sprint-title">Execution & Monitoring</div>
+                <div class="sprint-deliverable">Progress Reports · Risk Log · Timeline Adjustments</div>
+              </div>
+              <div class="sprint-arrow">→</div>
+              <div class="sprint-item">
+                <div class="sprint-week">Week 4</div>
+                <div class="sprint-title">Review & Closure</div>
+                <div class="sprint-deliverable">Final Presentation · Retrospective · Closure Docs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">Results</div>
+            <p>The programs became the official template Excelerate used to onboard future cohorts. Mentors reported that interns were immediately productive because expectations and processes were crystal clear. I proved I don't just do project management — I can package it into a teachable, scalable system.</p>
+          </div>
+
+          <!-- RECOMMENDATION BADGE -->
+          <div class="lor-card card reveal">
+            <div class="lor-header">
+              <div class="lor-badge">📄 Letter of Recommendation</div>
+              <div class="lor-org">Excelerate · February 12, 2026</div>
+            </div>
+            <p class="lor-quote">"Kamikun Johnson has my highest recommendation... they demonstrated punctuality in meeting deadlines and completing tasks while adhering to guidelines and working in harmony with the team."</p>
+            <div class="lor-sig">— Poonam Bhuria, People Empowerment Manager · Excelerate (Dubai | USA)</div>
+          </div>
+        </div>
+
+        <div class="cs-sidebar">
+          <div class="cs-detail-card card reveal">
+            <h4 class="cdc-title">Project Details</h4>
+            <div class="cdc-row"><span>Client</span><span>Excelerate</span></div>
+            <div class="cdc-row"><span>Location</span><span>Dubai | USA</span></div>
+            <div class="cdc-row"><span>Role</span><span>Project Lead</span></div>
+            <div class="cdc-row"><span>Duration</span><span>Nov–Dec 2025</span></div>
+            <div class="cdc-row"><span>Outcome</span><span class="green">Official Template</span></div>
+          </div>
+          <div class="cs-tech-card card reveal">
+            <h4 class="cdc-title">Tools Used</h4>
+            <div class="tech-list">
+              <span class="tag">Trello</span>
+              <span class="tag">Agile / Scrum</span>
+              <span class="tag">Kanban</span>
+              <span class="tag">Project Charters</span>
+              <span class="tag">Sprint Planning</span>
+              <span class="tag">Risk Logs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-divider"><div class="container"><div class="divider"></div></div></div>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDY 4 — PMBOK / COOPERATIVE
+       ═══════════════════════════════════════════ -->
+  <section class="case-study" id="cooperative">
+    <div class="container">
+      <div class="cs-header reveal">
+        <div class="cs-number">04</div>
+        <div class="cs-meta">
+          <div class="cs-tags">
+            <span class="tag">Social Impact</span>
+            <span class="tag cyan">PMBOK</span>
+            <span class="tag gold">₦31,500 Budget</span>
+          </div>
+          <h2 class="cs-title">PMBOK Transformation on a ₦31,500 Budget</h2>
+          <div class="cs-roles">
+            <span class="role-chip">Manager, Project Management</span>
+            <span class="role-chip">Kami Empowerment Cooperative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-grid">
+        <div class="cs-main">
+          <div class="cs-block reveal">
+            <div class="cs-block-label">The Problem</div>
+            <p>The cooperative had passionate members but zero project structure. Meetings were unstructured, tasks fell through, and member satisfaction was low — all with a tiny operating budget. They needed PMBOK-level discipline without PMBOK-level costs.</p>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">What I Did</div>
+            <p>I implemented full PMBOK-aligned project systems using only free tools: Google Workspace for charters, risk registers, communication plans, and KPI tracking. I trained cooperative leaders on basic project control, ensuring every process was lightweight but disciplined. Later, I applied the same methodology to coordinate a free health fair serving 500+ community members.</p>
+          </div>
+
+          <!-- PROJECT CHARTER SNAPSHOT -->
+          <div class="cs-diagram reveal">
+            <div class="diagram-label">Project Charter — 13th Anniversary Health Fair (Snapshot)</div>
+            <div class="charter-card">
+              <div class="charter-header">
+                <div class="charter-title-row">
+                  <span class="charter-project">13th Anniversary Free Biannual Kami Health Fair</span>
+                  <span class="charter-pm">PM: Kamikun Johnson</span>
+                </div>
+                <div class="charter-dates">
+                  <span>Start: July 1, 2025</span>
+                  <span>Completion: August 4, 2025</span>
+                </div>
+              </div>
+              <div class="charter-body">
+                <div class="charter-row">
+                  <div class="charter-col">
+                    <div class="charter-col-label">Goal</div>
+                    <p>Serve 500+ community members with 7+ categories of free medical services including ENT, mental health, vision, and preventive screenings.</p>
+                  </div>
+                  <div class="charter-col">
+                    <div class="charter-col-label">Budget</div>
+                    <div class="charter-budget">
+                      <div class="cb-row"><span>Medical Supplies</span><span>₦1,000,000</span></div>
+                      <div class="cb-row"><span>Logistics</span><span>₦450,000</span></div>
+                      <div class="cb-row"><span>Printing / Publicity</span><span>₦17,500</span></div>
+                      <div class="cb-row"><span>Refreshments</span><span>₦85,000</span></div>
+                      <div class="cb-row total"><span>Total Costs</span><span>₦184,900</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="charter-milestones">
+                  <div class="charter-col-label">Milestone Schedule</div>
+                  <div class="cm-grid">
+                    <div class="cm-item"><span class="cm-date">Jul 1–4</span><span>Planning Committee Setup</span></div>
+                    <div class="cm-item"><span class="cm-date">Jul 5–15</span><span>Volunteer & Medical Team Recruitment</span></div>
+                    <div class="cm-item"><span class="cm-date">Jul 10–25</span><span>Logistics & Supplies Mobilization</span></div>
+                    <div class="cm-item"><span class="cm-date">Jul 26–Aug 1</span><span>Venue Preparation & Outreach</span></div>
+                    <div class="cm-item"><span class="cm-date">Aug 2</span><span>Health Fair Event Execution</span></div>
+                    <div class="cm-item"><span class="cm-date">Aug 3–4</span><span>Post-Event Reporting</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal">
+            <div class="cs-block-label">Results</div>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="ri-number green">35%</div>
+                <div class="ri-label">Increase in member satisfaction within Q1</div>
+              </div>
+              <div class="result-item">
+                <div class="ri-number green">500+</div>
+                <div class="ri-label">Community members served at health fair</div>
+              </div>
+              <div class="result-item">
+                <div class="ri-number green">1st</div>
+                <div class="ri-label">Ever project charter used to launch community initiative</div>
+              </div>
+              <div class="result-item">
+                <div class="ri-number green">₦0</div>
+                <div class="ri-label">Spent on PM tools — free tools only</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-sidebar">
+          <div class="cs-detail-card card reveal">
+            <h4 class="cdc-title">Project Details</h4>
+            <div class="cdc-row"><span>Client</span><span>Kami Cooperative</span></div>
+            <div class="cdc-row"><span>Role</span><span>Project Manager</span></div>
+            <div class="cdc-row"><span>Budget</span><span class="green">₦31,500</span></div>
+            <div class="cdc-row"><span>Year</span><span>2025</span></div>
+            <div class="cdc-row"><span>Gain</span><span class="green">+35% Satisfaction</span></div>
+          </div>
+          <div class="cs-tech-card card reveal">
+            <h4 class="cdc-title">Framework Used</h4>
+            <div class="tech-list">
+              <span class="tag gold">PMBOK</span>
+              <span class="tag">Project Charter</span>
+              <span class="tag">Risk Register</span>
+              <span class="tag">KPI Tracking</span>
+              <span class="tag">Google Workspace</span>
+              <span class="tag">WhatsApp</span>
+              <span class="tag">Google Forms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding: 40px 0 100px; position:relative; z-index:1;">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-text">
+          <h2 class="cta-title">Like What You See?</h2>
+          <p class="cta-sub">Let's discuss how I can bring this kind of impact to your next project.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-primary">Let's Build Together →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">KJ<span>.</span></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Kamikun Johnson · Kammy Agency</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

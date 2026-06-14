@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Kamikun Johnson</title>
+  <meta name="description" content="Get in touch with Kamikun Johnson — available for full-time roles or contract blockchain project leadership immediately." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">KJ<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Let's Talk</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-menu-close" id="mobileClose">✕</span>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Work</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="ph-label reveal">Get In Touch</div>
+      <h1 class="ph-title reveal">Let's Build Your<br /><span>Next Project</span></h1>
+      <p class="ph-sub reveal">Available for full-time roles or contract project leadership — immediately. Remote globally, open to travel for key meetings.</p>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap reveal">
+          <div class="cf-header">
+            <h2 class="cf-title">Send a Message</h2>
+            <p class="cf-sub">Tell me about your project and I'll get back to you within 24 hours.</p>
+          </div>
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="38f2c9a8-3f2e-4796-9092-07594fad73e9">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="project-type">Project Type</label>
+              <select id="project-type" name="project-type" class="form-input form-select">
+                <option value="" disabled selected>Select a category</option>
+                <option value="blockchain">Blockchain / Web3 Project</option>
+                <option value="pm">Project Management</option>
+                <option value="audit">Technical Audit</option>
+                <option value="proposal">Proposal / Strategy</option>
+                <option value="fulltime">Full-Time Role</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="6" placeholder="Tell me about your project, timeline, and what you're looking to achieve..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="submitBtn">
+              <span id="btnText">Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✅</span> Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="contact-sidebar">
+
+          <!-- Direct Contact -->
+          <div class="contact-info-card card reveal">
+            <h3 class="cic-title">Direct Contact</h3>
+            <div class="cic-items">
+              <a href="mailto:kamikundaniel@gmail.com" class="cic-item">
+                <div class="cic-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="cic-label">Email</div>
+                  <div class="cic-value">kamikundaniel@gmail.com</div>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/kamikun-daniel-johnson-320051323" target="_blank" class="cic-item">
+                <div class="cic-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <div class="cic-label">LinkedIn</div>
+                  <div class="cic-value">Kamikun Daniel Johnson</div>
+                </div>
+              </a>
+              <div class="cic-item no-link">
+                <div class="cic-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="cic-label">Location</div>
+                  <div class="cic-value">Remote · Open to Travel</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Availability -->
+          <div class="availability-card card reveal">
+            <div class="av-dot"></div>
+            <h3 class="av-title">Currently Available</h3>
+            <p class="av-desc">Open to full-time roles or contract project leadership starting immediately.</p>
+            <div class="av-options">
+              <div class="av-option">
+                <span class="av-check">✓</span>
+                <span>Full-time PM / Blockchain Lead</span>
+              </div>
+              <div class="av-option">
+                <span class="av-check">✓</span>
+                <span>Contract project leadership</span>
+              </div>
+              <div class="av-option">
+                <span class="av-check">✓</span>
+                <span>Technical proposal writing</span>
+              </div>
+              <div class="av-option">
+                <span class="av-check">✓</span>
+                <span>Blockchain system audits</span>
+              </div>
+              <div class="av-option">
+                <span class="av-check">✓</span>
+                <span>Remote team leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time -->
+          <div class="response-card card reveal">
+            <div class="rc-header">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Response Time</span>
+            </div>
+            <div class="rc-time">Within 24 hours</div>
+            <p class="rc-note">Available Sun–Thu (KSA working hours) and flexible across time zones for global clients.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / WHAT TO EXPECT -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-label reveal">What to Expect</div>
+      <h2 class="section-title reveal">How I Work With Clients</h2>
+      <div class="faq-grid">
+        <div class="faq-item card reveal">
+          <div class="faq-num">01</div>
+          <h3 class="faq-title">Discovery Call</h3>
+          <p class="faq-desc">We start with a focused call to understand your project, goals, timeline, and team structure. No fluff — straight to what matters.</p>
+        </div>
+        <div class="faq-item card reveal">
+          <div class="faq-num">02</div>
+          <h3 class="faq-title">Proposal & Architecture</h3>
+          <p class="faq-desc">I deliver a detailed scoped proposal with milestone structure, resource plan, tech stack recommendations, and clear deliverables.</p>
+        </div>
+        <div class="faq-item card reveal">
+          <div class="faq-num">03</div>
+          <h3 class="faq-title">Agile Execution</h3>
+          <p class="faq-desc">Weekly sprints, demo-based validation, transparent reporting. Your team stays aligned and your stakeholders stay informed at every step.</p>
+        </div>
+        <div class="faq-item card reveal">
+          <div class="faq-num">04</div>
+          <h3 class="faq-title">Delivered & Supported</h3>
+          <p class="faq-desc">Milestone-based delivery with production deployment and post-launch support. You get a product that ships — not just a plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">KJ<span>.</span></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Kamikun Johnson · Kammy Agency</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
